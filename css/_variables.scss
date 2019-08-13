@@ -1,0 +1,16 @@
+//font-size
+@mixin rem($size) {
+  font-size: $size/16*1rem;
+}
+
+//fonts
+$ft-roboto: 'Roboto', Helvetica, Arial, sans-serif;
+
+//Transition
+@mixin transition($transition) {
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  -webkit-transition: $transition;
+  transition: $transition;
+}
+

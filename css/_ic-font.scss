@@ -1,0 +1,73 @@
+$icomoon-font-path: "../fonts/ic-font" !default;
+
+$bb-vk: "\e900";
+$bb-place: "\e904";
+$bb-instagram: "\e905";
+$bb-calendar: "\e901";
+$bb-bookmark: "\e902";
+$bb-facebook: "\e903";
+
+@font-face {
+  font-family: 'ic-font';
+  src:  url('#{$icomoon-font-path}/ic-font.eot?adbxsn');
+  src:  url('#{$icomoon-font-path}/ic-font.eot?adbxsn#iefix') format('embedded-opentype'),
+  url('#{$icomoon-font-path}/ic-font.ttf?adbxsn') format('truetype'),
+  url('#{$icomoon-font-path}/ic-font.woff?adbxsn') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media all and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'ic-font';
+    src:  url('#{$icomoon-font-path}/ic-font.svg?adbxsn#ic-font') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+.bb {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'ic-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bb-vk {
+  &:before {
+    content: $bb-vk;
+  }
+}
+.bb-place {
+  &:before {
+    content: $bb-place;
+  }
+}
+.bb-instagram {
+  &:before {
+    content: $bb-instagram;
+  }
+}
+.bb-calendar {
+  &:before {
+    content: $bb-calendar;
+  }
+}
+.bb-bookmark {
+  &:before {
+    content: $bb-bookmark;
+  }
+}
+.bb-facebook {
+  &:before {
+    content: $bb-facebook;
+  }
+}
